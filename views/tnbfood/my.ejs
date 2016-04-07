@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="my-info">
+            <div class="top"></div>
+            <img class="avatar" src="<%= data.headimgurl %>" />
+            <div class="nickname"><%= data.nickname %></div>
+            <% if (data.userData) { %>
+            <div class="info">
+                <div class="row">
+                    <div class="title">
+                        性别
+                    </div>
+                    <div class="value">
+                        <%= data.userData.sex %>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        身高
+                    </div>
+                    <div class="value">
+                        <%= data.userData.height %>cm
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        体重
+                    </div>
+                    <div class="value">
+                        <%= data.userData.weight %>kg
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        劳动强度
+                    </div>
+                    <div class="value">
+                        <%= data.userData.work %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+
+        <a><div class="rbtn ck" id="r-btn">
+            <% if (data.userData) { %>
+            重新填写档案
+            <% } else { %>
+            完善资料
+            <% } %>
+          </div></a>
+
+        <div class="tab">
+            <a href="/bodyguard"><div class="ws ck"><div class="icon"></div><div class="title">健康卫士</div></div></a>
+            <a href="#"><div class="my act"><div class="icona"></div><div class="title">我的资料</div></div></a>
+        </div>
+
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+<script>
+  $('#r-btn').on('tap', function(event){
+    location.href = '/user/edit?step=1';
+  });
+</script>
+</body>
+</html>

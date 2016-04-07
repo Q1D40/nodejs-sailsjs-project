@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="pro">
+            <div class="top"></div>
+            <img class="avatar" src="<%= data.headimgurl %>" />
+            <div class="nickname"><%= data.nickname %></div>
+            <div class="info">
+                <div class="left">
+                    <div class="per <% if (data.userData.sex == '女') { %>woman<% } %>"></div>
+                </div>
+                <div class="right">
+                    <div class="row">
+                        <div class="title">
+                            年龄
+                        </div>
+                        <div class="v">
+                            <%= data.userData.age %>岁
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            身高
+                        </div>
+                        <div class="v">
+                            <%= data.userData.height %>cm
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            体重
+                        </div>
+                        <div class="v">
+                            <%= data.userData.weight %>kg
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            理想体重
+                        </div>
+                        <div class="v">
+                          <%= data.userData.lw %>kg
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            劳动强度
+                        </div>
+                        <div class="v">
+                            <%= data.userData.work %>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            每天热量
+                        </div>
+                        <div class="v">
+                            <%= data.userData.dc %>千卡
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            食物交换份
+                        </div>
+                        <div class="v">
+                            ≈<%= data.userData.jhf %>份
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a><div class="rbtn ck" id="r-btn">重新填写档案</div></a>
+
+        <div class="bth">
+        </div>
+
+        <div class="bt">
+            <a><div class="btn ck" id="s-btn">开始制定健康食谱</div></a>
+        </div>
+
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+<script>
+  $('#r-btn').on('tap', function(event){
+    location.href = '/user/edit?step=1&type=1';
+  });
+  $('#s-btn').on('tap', function(event){
+    location.href = '/tnbfood/make';
+  });
+</script>
+</body>
+</html>

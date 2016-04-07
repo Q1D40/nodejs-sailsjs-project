@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="foodlist">
+            <div class="top"></div>
+            <% data.list.forEach(function(row) { %>
+            <div class="food ck d-lk" did="<%= row.id %>">
+                <div class="head">
+                    <div class="time">
+                      <%= row.time %>
+                    </div>
+                    <div class="title">
+                        生成的食谱
+                    </div>
+                    <div class="d">
+                        <a>详情</a>
+                    </div>
+                </div>
+                <div class="ro">
+                    <div class="logo">
+                    </div>
+                    <div class="rt">
+                        <div class="title">
+                            早餐
+                        </div>
+                        <div class="des">
+                          <%= row.zc %>
+                        </div>
+                    </div>
+                </div>
+                <div class="ro">
+                    <div class="logo w">
+                    </div>
+                    <div class="rt">
+                        <div class="title">
+                            午餐
+                        </div>
+                        <div class="des">
+                          <%= row.wc %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+
+        <div class="bth">
+        </div>
+
+        <div class="bt">
+            <a><div class="btn ck" id="m-btn">生成新食谱</div></a>
+        </div>
+
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+<script>
+  $('#m-btn').on('tap', function(event){
+    location.href = '/user/info?type=1';
+  });
+  $('.d-lk').on('tap', function(event){
+    var id = $(this).attr('did');
+    location.href = '/tnbfood/detail?id=' + id;
+  });
+</script>
+</body>
+</html>

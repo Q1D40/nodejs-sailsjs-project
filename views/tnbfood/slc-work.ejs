@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="slc-work">
+            <div class="top <% if (data.sex == '女') { %>woman<% } %>"></div>
+            <a>
+                <div class="ck sbm-work" v="卧床">
+                    <img src="/images/tnbfood/slc-work-1.png" />
+                    <div class="title">卧床</div>
+                    <div class="sub">基本上没有任何活动</div>
+                </div>
+            </a>
+            <a>
+                <div class="ck sbm-work" v="轻度">
+                    <img src="/images/tnbfood/slc-work-2.png" />
+                    <div class="title">轻度</div>
+                    <div class="sub">医生、教师、服务员等</div>
+                </div>
+            </a>
+            <a>
+                <div class="ck sbm-work" v="中度">
+                    <img src="/images/tnbfood/slc-work-3.png" />
+                    <div class="title">中度</div>
+                    <div class="sub">学生、司机、操作工等</div>
+                </div>
+            </a>
+            <a>
+                <div class="ck sbm-work" v="重度">
+                    <img src="/images/tnbfood/slc-work-4.png" />
+                    <div class="title">重度</div>
+                    <div class="sub">农活、体育、建筑等</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <form action="" method="get" id="fm">
+      <input type="hidden" name="work" value="" id="work" />
+      <input type="hidden" name="age" value="<%= data.age %>" />
+      <input type="hidden" name="weight" value="<%= data.weight %>" />
+      <input type="hidden" name="height" value="<%= data.height %>" />
+      <input type="hidden" name="sex" value="<%= data.sex %>" />
+      <input type="hidden" name="step" value="6" />
+      <input type="hidden" name="type" value="<%= data.type %>" />
+    </form>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+</body>
+</html>

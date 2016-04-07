@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/base/base.css" rel="stylesheet">
+    <link href="/styles/list/list.css" rel="stylesheet">
+    <link href="/styles/tabbar/tabbar2.css" rel="stylesheet">
+    <script src="/js/font/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="list nomargin">
+            <% data.knowledgefavData.forEach(function(row) { %>
+              <div class="row ck krow" knowledgeId="<%=row.knowledge%>">
+                  <div class="title">
+                    <%=row.title%>
+                  </div>
+                  <div class="ar">
+                  </div>
+              </div>
+            <% }); %>
+        </div>
+        <div class="w">
+        </div>
+        <div class="tabbar">
+            <div class="tabbtn ck" id="bak">
+                <div class="tabico icobak">
+                </div>
+                <div class="tabtitle">
+                    返回
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/base/base.js"></script>
+<script>
+  $('#bak').on('tap', function(event){
+    location.href = '/my/index';
+  });
+  $('.krow').on('tap', function(event){
+    var knowledgeId = $(this).attr('knowledgeId');
+    location.href = '/knowledge/detail?bak=fav&id=' + knowledgeId;
+  });
+</script>
+</body>
+</html>

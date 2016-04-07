@@ -1,0 +1,86 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+.container {
+    padding-top: 0.2rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.title {
+    font-size: 0.25rem;
+    line-height: 0.35rem;
+    color: #000000;
+    margin-bottom: 0.05rem;
+}
+
+.info {
+    height: 0.27rem;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.date {
+    line-height: 0.27rem;
+    font-size: 0.16rem;
+    color: #8c8c8c;
+    float: left;
+}
+
+.author {
+    line-height: 0.27rem;
+    font-size: 0.17rem;
+    color: #607fa6;
+    float: left;
+    margin-left: 0.09rem;
+}
+
+.content {
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #3e3e3e;
+}
+
+p {
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+}
+
+blockquote {
+    margin: 0rem;
+    padding-left: 0.1rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-left: 0.03rem solid #dbdbdb
+}
+
+img {
+    width: 100%;
+}
+
+ol {
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+}
+
+ul {
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+}
+
+li {
+    margin-top: 0rem;
+    margin-bottom: 0.15rem;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 2.06rem;
+}

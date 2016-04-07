@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/base/base.css" rel="stylesheet">
+    <link href="/styles/my/index.css" rel="stylesheet">
+    <link href="/styles/list/list2.css" rel="stylesheet">
+    <link href="/styles/tabbar/tabbar.css" rel="stylesheet">
+    <script src="/js/font/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <img class="avatar" src="<%= data.headimgurl %>" />
+            <div class="nickname"><%= data.nickname %></div>
+        </div>
+        <div class="list">
+            <div class="row ck" id="info">
+                <div class="ico info">
+                </div>
+                <div class="title">
+                    我的基本资料
+                </div>
+                <div class="ar">
+                </div>
+            </div>
+            <div class="row ck" id="fav">
+                <div class="ico fav">
+                </div>
+                <div class="title">
+                    我收藏的文章
+                </div>
+                <div class="ar">
+                </div>
+            </div>
+        </div>
+        <div class="w">
+        </div>
+        <div class="tabbar">
+            <div class="tabbtn ck" id="tb-nlg">
+                <div class="tabico icoknlg">
+                </div>
+                <div class="tabtitle">
+                    知识
+                </div>
+            </div>
+            <div class="tabbtn ck" id="tb-hp">
+                <div class="tabico icohlp">
+                </div>
+                <div class="tabtitle">
+                    助手
+                </div>
+            </div>
+            <div class="tabbtn act">
+                <div class="tabico icomy">
+                </div>
+                <div class="tabtitle">
+                    我的
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/base/base.js"></script>
+<script>
+  $('#tb-nlg').on('tap', function(event){
+    location.href = '/knowledge/main';
+  });
+  $('#tb-hp').on('tap', function(event){
+    location.href = '/helper/index';
+  });
+  $('#info').on('tap', function(event){
+    location.href = '/my/info';
+  });
+  $('#fav').on('tap', function(event){
+    location.href = '/my/fav';
+  });
+</script>
+</body>
+</html>

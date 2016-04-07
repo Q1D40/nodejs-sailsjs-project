@@ -1,0 +1,63 @@
+﻿.tabbar {
+    background-color: #ffffff;
+    width: 100%;
+    height: 0.55rem;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #cccccc;
+}
+
+.tabbtn {
+    height: 0.55rem;
+    width: -webkit-calc(100% / 3);
+    float: left;
+}
+
+
+.tabtitle {
+    font-size: 0.18rem;
+    line-height: 0.55rem;
+    color: #808080;
+    float: left;
+    margin-left: 0.05rem;
+}
+
+.act .tabtitle {
+    color: #1cb67b;
+}
+.tabico {
+    height: 0.22rem;
+    float: left;
+    margin-top: 0.165rem;
+    background-size:100% 100%;
+}
+
+.icoknlg {
+     background-image: url("/images/tabbar/t1-knlg.png");
+     width: 0.26rem;
+     margin-left: 0.29rem;
+}
+
+.act .icoknlg {
+     background-image: url("/images/tabbar/t1-knlg-act.png");
+}
+
+.icohlp {
+     background-image: url("/images/tabbar/t1-hlp.png");
+     width: 0.23rem;
+     margin-left: 0.305rem;
+}
+
+.act .icohlp {
+     background-image: url("/images/tabbar/t1-hlp-act.png");
+}
+
+.icomy {
+     background-image: url("/images/tabbar/t1-my.png");
+     width: 0.23rem;
+     margin-left: 0.305rem;
+}
+
+.act .icomy {
+     background-image: url("/images/tabbar/t1-my-act.png");
+}

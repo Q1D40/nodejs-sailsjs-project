@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="info-tip">
+            <div class="title">欢迎使用</div>
+            <div class="sub">糖尿病健康食谱生成器</div>
+            <div class="tip">在第一次使用之前，请完善您的个人信息，以便我们根据您的身体情况来辅助您制定可靠的食谱。</div>
+            <a><div class="btn ck" id="sbm">完善资料</div></a>
+        </div>
+    </div>
+
+    <form action="" method="get" id="fm">
+      <input type="hidden" name="step" value="1" />
+      <input type="hidden" name="type" value="<%= data.type %>" />
+    </form>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+</body>
+</html>

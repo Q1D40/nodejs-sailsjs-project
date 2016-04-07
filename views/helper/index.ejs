@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/base/base.css" rel="stylesheet">
+    <link href="/styles/helper/index.css" rel="stylesheet">
+    <link href="/styles/tabbar/tabbar.css" rel="stylesheet">
+    <script src="/js/font/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="section ck" id="sec-tnb">
+            <div class="title">
+                健康食谱计算器
+            </div>
+            <div class="subtitle">
+                协助糖尿病患者定制出健康食谱，确保每日摄入的营养均衡。
+            </div>
+            <div class="tag">
+                糖尿病患者适用
+            </div>
+            <div class="tag">
+                减重人群适用
+            </div>
+        </div>
+        <div class="w">
+        </div>
+        <div class="tabbar">
+            <div class="tabbtn ck" id="tb-nlg">
+                <div class="tabico icoknlg">
+                </div>
+                <div class="tabtitle">
+                    知识
+                </div>
+            </div>
+            <div class="tabbtn act">
+                <div class="tabico icohlp">
+                </div>
+                <div class="tabtitle">
+                    助手
+                </div>
+            </div>
+            <div class="tabbtn ck" id="tb-my">
+                <div class="tabico icomy">
+                </div>
+                <div class="tabtitle">
+                    我的
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/base/base.js"></script>
+<script>
+  $('#sec-tnb').on('tap', function(event){
+    var type = <%=data.type%>;
+    if (type == 2) {
+      location.href = '/tnbfood/list';
+    } else if (type == 1) {
+      location.href = '/user/info?type=1';
+    } else {
+      location.href = '/user/edit?step=0';
+    }
+  });
+  $('#tb-nlg').on('tap', function(event){
+    location.href = '/knowledge/main';
+  });
+  $('#tb-my').on('tap', function(event){
+    location.href = '/my/index';
+  });
+</script>
+</body>
+</html>

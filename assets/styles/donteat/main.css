@@ -1,0 +1,385 @@
+﻿html {
+  height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+a:link{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+div {
+  -webkit-user-select:none;
+}
+
+img {
+  -webkit-user-select:none;
+}
+
+footer {
+  -webkit-user-select:none;
+}
+
+header > .logo {
+    background-image: url("/images/donteat/donteat.png");
+    background-size:100% 100%;
+    height: 0.54rem;
+    width: 1.68rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.84rem;
+}
+
+header > .title {
+    text-align:center;
+    color: #3e3e3e;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    margin-top: 0.1rem;
+}
+
+header > .search {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.35rem;
+    height: 0.49rem;
+}
+
+header > .search > .text {
+    height: -webkit-calc(0.49rem - 2px);
+    float: left;
+    border:1px solid #cccccc;
+    font-size: 0.17rem;
+    line-height: 0.17rem;
+    width: -webkit-calc(100% - 0.49rem - 2px - 0.1rem);
+    -webkit-appearance:none;
+    border-radius: 0;
+    padding: 0;
+    padding-left: 0.1rem;
+}
+
+input::-webkit-input-placeholder {
+    color: #cccccc;
+    font-size: 0.17rem;
+    line-height: 0.17rem;
+    padding-top: 0.02rem;
+}
+
+header > .search > .text:focus{
+    outline:none;
+}
+
+header > .search > .submit {
+    float: left;
+    width: -webkit-calc(0.49rem - 3px);
+    height: -webkit-calc(0.49rem - 2px);
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    background: url("/images/donteat/search.png");
+    background-size:100% 100%;
+}
+
+header > .keyword {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    text-align: center;
+    font-size: 0.17rem;
+    line-height: 0.25rem;
+}
+
+header > .keyword > div {
+    display:inline;
+}
+
+header > .keyword > a > div {
+    display:inline-block;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+    border:1px solid #cccccc;
+    color: #cccccc;
+    border-radius: 0.15rem;
+    padding-left: 0.13rem;
+    padding-right: 0.13rem;
+}
+
+header > .question {
+    text-align: center;
+    font-size: 0.15rem;
+    line-height: 0.15rem;
+    margin-top: 0.35rem;
+}
+
+header > .question > a {
+    color: #33b6f3;
+}
+
+section > .fruit {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 1.06rem;
+}
+
+section > .fruit > img {
+    width: 100%;
+}
+
+header > .food{
+  height: 2.65rem;
+}
+
+header > .food > .main {
+    width: 100%;
+    height: 2.65rem;
+    position: absolute;
+    top: 0;
+}
+
+header > .food > .shadow {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header > .food > .title {
+    position: absolute;
+    top: 0.35rem;
+    left: 0.2rem;
+    font-size: 0.35rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header > .noimg {
+  height: 1.5rem;
+}
+
+header > .noimg > .main {
+    width: 100%;
+    height: 1.5rem;
+}
+
+header > .noimg > .title {
+    position: absolute;
+    top: 0.575rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0.35rem;
+    line-height: 0.35rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header > .multi {
+    height: 2.24rem;
+}
+
+header > .multi > .main {
+    width: 100%;
+    height: 2.24rem;
+}
+
+header > .multi > .title {
+    position: absolute;
+    top: 0.7rem;
+    width: 100%;
+    font-size: 0.35rem;
+    line-height: 0.35rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+header > .multi > .sub {
+    position: absolute;
+    top: 1.37rem;
+    left: auto;
+    left: auto;
+    width: 100%;
+    font-size: 0.17rem;
+    line-height: 0.25rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+header > .none {
+    height: 2.24rem;
+}
+
+header > .none > .main {
+    width: 100%;
+    height: 2.24rem;
+}
+
+header > .none > .title {
+    position: absolute;
+    top: 0.7rem;
+    width: 100%;
+    font-size: 0.35rem;
+    line-height: 0.35rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+header > .none > .sub {
+    position: absolute;
+    top: 1.37rem;
+    left: auto;
+    left: auto;
+    width: 100%;
+    font-size: 0.17rem;
+    line-height: 0.25rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+section > .tip{
+    margin-top: 0.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+section > .tip > img {
+    width: 100%;
+}
+
+section > .tab {
+    height: 0.5rem;
+}
+
+section > .tab > div {
+    width: 50%;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #808080;
+    padding-top: 0.16rem;
+    padding-bottom: -webkit-calc(0.16rem - 1px);
+}
+
+section > .tab > .left {
+    border-right: 1px solid #eeeeee;
+    width: -webkit-calc(50% - 1px);
+}
+
+section > .tab > .act {
+    color: #1cb67b;
+    border-bottom: 1px solid #1cb67b;
+}
+
+section > .sub {
+    padding-left: 0.2rem;
+    background-color: #fafafa;
+}
+
+section > .one {
+    padding-left: 0.2rem;
+}
+
+section > .list > .cell {
+    height: 0.5rem;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 0.16rem;
+    line-height: 0.16rem;
+    color: #3e3e3e;
+}
+
+section > .sub > .cell {
+    height: 0.45rem;
+    border-bottom: 1px solid #dddddd;
+    font-size: 0.15rem;
+    line-height: 0.15rem;
+    color: #808080;
+}
+
+section > .sub > .cell:last-child {
+    border-bottom: 0;
+}
+
+section > .list > .cell > .title {
+    float: left;
+    padding-top: 0.17rem;
+    margin-left: 0.2rem;
+}
+
+section > .one > .cell > .title {
+    margin-left: 0;
+}
+
+section > .sub > .cell > .title {
+    margin-left: 0.1rem;
+    padding-top: 0.15rem;
+}
+
+section > .list > .cell > .arrow {
+    float: right;
+    background-image: url("/images/donteat/a1.png");
+    background-size:100% 100%;
+    width: 0.13rem;
+    height: 0.085rem;
+    margin-right: 0.2rem;
+    margin-top: 0.21rem;
+}
+
+section > .list > .cell > .act {
+    background-image: url("/images/donteat/a2.png");
+}
+
+section > .sub > .cell > .result {
+    float: right;
+    color: #808080;
+    margin-right: 0.2rem;
+    padding-top: 0.15rem;
+}
+
+section > .list > .cell > .result {
+    float: right;
+    color: #808080;
+    padding-top: 0.17rem;
+    margin-right: 0.2rem;
+}
+
+section > .list > .cell > .green {
+    color: #1cb67b;
+}
+
+section > .list > .cell > .orange {
+    color: #ff7e16;
+}
+
+footer {
+    font-size: 0.13rem;
+    line-height: 0.39rem;
+    color: #cccccc;
+    text-align: center;
+    margin-top: 0.38rem;
+}

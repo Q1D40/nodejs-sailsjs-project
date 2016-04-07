@@ -1,0 +1,47 @@
+﻿.top {
+    width: 100%;
+    height: 1.8rem;
+}
+
+.top img {
+    width: 100%;
+    height: 1.8rem;
+}
+
+.section {
+    background-color: #ffffff;
+    width: 100%;
+    height: -webkit-calc(1.84rem - 0.2rem);
+    margin-top: 0.1rem;
+    padding-top: 0.2rem;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.title {
+    width: -webkit-calc(100% - 0.3rem);
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    color: #3e3e3e;
+    margin-left: 0.15rem;
+}
+
+.subtitle {
+    width: -webkit-calc(100% - 0.3rem);
+    font-size: 0.17rem;
+    line-height: 0.22rem;
+    color: #3e3e3e;
+    margin-top: 0.175rem;
+    margin-left: 0.15rem;
+}
+
+.btn {
+    width: -webkit-calc(100% - 0.3rem);
+    border-radius: 0.05rem;
+    background-color: #1cb67b;
+    font-size: 0.2rem;
+    color: #ffffff;
+    line-height: 0.5rem;
+    text-align: center;
+    margin-left: 0.15rem;
+    margin-top: 0.175rem;
+}

@@ -1,0 +1,42 @@
+﻿.section {
+    background-color: #ffffff;
+    width: 100%;
+    height: -webkit-calc(1.43rem - 0.2rem);
+    padding-top: 0.2rem;
+    box-shadow: 0 1px 1px #e4e4e4;
+    margin-bottom: 0.1rem;
+}
+
+.title {
+    width: -webkit-calc(100% - 0.3rem);
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #3e3e3e;
+    margin-left: 0.15rem;
+}
+
+.subtitle {
+    width: -webkit-calc(100% - 0.3rem);
+    font-size: 0.17rem;
+    line-height: 0.22rem;
+    color: #808080;
+    margin-top: 0.1rem;
+    margin-left: 0.15rem;
+}
+
+.tag {
+    border-radius: 0.05rem;
+    background-color: #1cb67b;
+    font-size: 0.15rem;
+    color: #ffffff;
+    line-height: 0.26rem;
+    margin-left: 0.15rem;
+    margin-top: 0.1rem;
+    float: left;
+    padding-left: 0.06rem;
+    padding-right: 0.06rem;
+}
+
+.red {
+    background-color: #ff6161;
+}

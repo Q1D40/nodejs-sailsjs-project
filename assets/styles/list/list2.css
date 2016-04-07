@@ -1,0 +1,55 @@
+﻿.list {
+    margin-top: 0.1rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.list .row {
+    width: 100%;
+    height: 0.6rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.list .row .ico {
+    height: 0.225rem;
+    width: 0.235rem;
+    float: left;
+    margin-top: 0.19rem;
+    background-size: 100% 100%;
+    margin-left: 0.15rem;
+}
+
+.list .row .info {
+    background-image: url("/images/my/info.png");
+}
+
+.list .row .fav {
+    background-image: url("/images/my/fav.png");
+}
+
+.list .row .title {
+    height: 0.6rem;
+    font-size: 0.18rem;
+    line-height: 0.6rem;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+.list .row .value {
+    color: #3e3e3e;
+    font-size: 0.18rem;
+    line-height: 0.6rem;
+    height: 0.6rem;
+    float: right;
+    margin-right: 0.1rem;
+}
+
+.list .row .ar {
+    background-image: url("/images/list/ar.png");
+    background-size:100% 100%;
+    width: 0.1rem;
+    height: 0.16rem;
+    float: right;
+    margin-top: 0.22rem;
+    margin-right: 0.1rem;
+}

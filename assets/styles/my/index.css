@@ -1,0 +1,26 @@
+﻿.top {
+    width: 100%;
+    height: 1.46rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.avatar {
+    width: 0.73rem;
+    height: 0.73rem;
+    border: 0.03rem solid #1cb67b;
+    border-radius:50%;
+    top: 0.2rem;
+    left: -webkit-calc((100% - 0.73rem) / 2);
+    position: absolute;
+}
+
+.nickname {
+    color: #000000;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    text-align: center;
+    top: 1.08rem;
+    position: absolute;
+    width: 100%;
+}

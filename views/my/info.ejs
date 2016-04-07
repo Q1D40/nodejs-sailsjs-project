@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/base/base.css" rel="stylesheet">
+    <link href="/styles/list/list2.css" rel="stylesheet">
+    <link href="/styles/tabbar/tabbar2.css" rel="stylesheet">
+    <script src="/js/font/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="list">
+            <div class="row ck" id="sex">
+                <div class="title">
+                    性别
+                </div>
+                <div class="ar">
+                </div>
+                <div class="value">
+                  <% if (data.userData.sex) { %>
+                    <%=data.userData.sex%>
+                  <% } %>
+                </div>
+            </div>
+            <div class="row ck" id="age">
+                <div class="title">
+                    年龄
+                </div>
+                <div class="ar">
+                </div>
+                <div class="value">
+                  <% if (data.userData.age) { %>
+                    <%=data.userData.age%>岁
+                  <% } %>
+                </div>
+            </div>
+            <div class="row ck" id="height">
+                <div class="title">
+                    身高
+                </div>
+                <div class="ar">
+                </div>
+                <div class="value">
+                  <% if (data.userData.height) { %>
+                    <%=data.userData.height%>cm
+                  <% } %>
+                </div>
+            </div>
+            <div class="row ck" id="w">
+                <div class="title">
+                    体重
+                </div>
+                <div class="ar">
+                </div>
+                <div class="value">
+                  <% if (data.userData.weight) { %>
+                    <%=data.userData.weight%>kg
+                  <% } %>
+                </div>
+            </div>
+            <div class="row ck" id="work">
+                <div class="title">
+                    劳动强度
+                </div>
+                <div class="ar">
+                </div>
+                <div class="value">
+                  <% if (data.userData.work) { %>
+                    <%=data.userData.work%>
+                  <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="w">
+        </div>
+        <div class="tabbar">
+            <div class="tabbtn ck" id="bak">
+                <div class="tabico icobak">
+                </div>
+                <div class="tabtitle">
+                    返回
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/base/base.js"></script>
+<script>
+  $('#bak').on('tap', function(event){
+    location.href = '/my/index';
+  });
+  $('#sex').on('tap', function(event){
+    location.href = '/my/edit?f=sex';
+  });
+  $('#age').on('tap', function(event){
+    location.href = '/my/edit?f=age';
+  });
+  $('#height').on('tap', function(event){
+    location.href = '/my/edit?f=height';
+  });
+  $('#w').on('tap', function(event){
+    location.href = '/my/edit?f=w';
+  });
+  $('#work').on('tap', function(event){
+    location.href = '/my/edit?f=work';
+  });
+</script>
+</body>
+</html>

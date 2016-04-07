@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="fooded">
+            <div class="top">
+                <div class="w"></div>
+                <div class="title">
+                    我的健康食谱
+                </div>
+                <div class="sec">
+                  满足每天 <%= data.dc %> 千卡热量
+                </div>
+                <div class="thr">
+                    约 <%= data.jhf %> 个交换份
+                </div>
+            </div>
+            <div class="fd">
+                <div class="head">
+                    <div class="w"></div>
+                    <div class="title">
+                        早餐
+                    </div>
+                    <div class="st">
+                        占总热量 25% ≈ <%= data.zc.jhf %> 份
+                    </div>
+                </div>
+            <% data.zc.list.forEach(function(row) { %>
+                <div class="row">
+                    <img src="<%= row.img %>" />
+                    <div class="name"><%= row.name %></div>
+                    <div class="fn"><%= row.f %>份</div>
+                    <div class="v">共<%= row.zl %><%= row.unit %></div>
+                </div>
+            <% }); %>
+            </div>
+            <div class="fd">
+                <div class="head">
+                    <div class="w"></div>
+                    <div class="title">
+                        午餐
+                    </div>
+                    <div class="st">
+                        占总热量 40% ≈ <%= data.wc.jhf %> 份
+                    </div>
+                </div>
+            <% data.wc.list.forEach(function(row) { %>
+                <div class="row">
+                    <img src="<%= row.img %>" />
+                    <div class="name"><%= row.name %></div>
+                    <div class="fn"><%= row.f %>份</div>
+                    <div class="v">共<%= row.zl %><%= row.unit %></div>
+                </div>
+            <% }); %>
+            </div>
+            <div class="fd">
+                <div class="head">
+                    <div class="w"></div>
+                    <div class="title">
+                        晚餐
+                    </div>
+                    <div class="st">
+                        占总热量 35% ≈ <%= data.nc.jhf %> 份
+                    </div>
+                </div>
+            <% data.nc.list.forEach(function(row) { %>
+                <div class="row">
+                    <img src="<%= row.img %>" />
+                    <div class="name"><%= row.name %></div>
+                    <div class="fn"><%= row.f %>份</div>
+                    <div class="v">共<%= row.zl %><%= row.unit %></div>
+                </div>
+            <% }); %>
+            </div>
+
+            <div class="info">
+                <div class="head">
+                    您生成本食谱时的个人资料
+                </div>
+                <div class="left">
+                  <div class="per <% if (data.info.sex == '女') { %>woman<% } %>"></div>
+                </div>
+                <div class="right">
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            年龄
+                        </div>
+                        <div class="v">
+                          <%= data.info.age %>岁
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            身高
+                        </div>
+                        <div class="v">
+                            <%= data.info.height %>cm
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            体重
+                        </div>
+                        <div class="v">
+                            <%= data.info.weight %>kg
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            理想体重
+                        </div>
+                        <div class="v">
+                            <%= data.info.lw %>kg
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            劳动强度
+                        </div>
+                        <div class="v">
+                            <%= data.info.work %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time">
+                于 <%= data.time %> 生成
+            </div>
+
+            <div class="bth">
+            </div>
+
+            <div class="bt">
+                <a><div class="btn ck" id="b-btn">返回</div></a>
+            </div>
+        </div>
+
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+<script>
+  $('#b-btn').on('tap', function(event){
+    location.href = '/tnbfood/list';
+  });
+</script>
+</body>
+</html>

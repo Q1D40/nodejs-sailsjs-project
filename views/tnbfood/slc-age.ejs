@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="slc-age">
+          <div class="top <% if (data.sex == '女') { %>woman<% } %>"></div>
+            <div class="bodyh">
+              <% for (var i = 15; i <= 90; i++) { %>
+                <div class="ck sbm-age" v="<%= i %>"><a><%= i %></a></div>
+              <% } %>
+            </div>
+        </div>
+
+    </div>
+
+    <form action="" method="get" id="fm">
+      <input type="hidden" name="age" value="" id="age" />
+      <input type="hidden" name="weight" value="<%= data.weight %>" />
+      <input type="hidden" name="height" value="<%= data.height %>" />
+      <input type="hidden" name="sex" value="<%= data.sex %>" />
+      <input type="hidden" name="step" value="5" />
+      <input type="hidden" name="type" value="<%= data.type %>" />
+    </form>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+</body>
+</html>

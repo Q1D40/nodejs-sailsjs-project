@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="food">
+            <div class="top">
+                <div class="left">
+                    <div class="up">
+                         剩余交换份
+                    </div>
+                    <div class="dn" id="syjhf">
+                      <%= data.jhf %>
+                    </div>
+                    <div class="fn">
+                        份
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="row">
+                        <div class="title">
+                            碳水化合物
+                        </div>
+                        <div class="v">
+                          <span id="tshhwn">0</span>/<%= data.tshhw %> 份
+                        </div>
+                        <div class="p">
+                            <div class="vl" id="tshhwp" style="width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            蛋白质
+                        </div>
+                        <div class="v">
+                            <span id="dbzn">0</span>/<%= data.dbz %> 份
+                        </div>
+                        <div class="p">
+                            <div class="vl" id="dbzp" style="width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            脂肪
+                        </div>
+                        <div class="v">
+                            <span id="zfn">0</span>/<%= data.zf %> 份
+                        </div>
+                        <div class="p">
+                            <div class="vl" id="zfp" style="width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="h ck">
+                <div class="w"></div>
+                <div class="title">
+                    早餐
+                </div>
+                <div class="des">
+                    占总热量 25%，约占 <%= data.zjhf %> 个交换份
+                </div>
+                <div class="ar">
+                </div>
+                <div class="w"></div>
+                </div>
+                <div class="sub" style="display: none">
+                    <div class="row" id="z-gs">
+                        <img src="/images/tnbfood/c-gs.jpg"/>
+                        <div class="title">谷薯类</div>
+                        <div class="fn red">至少摄入<%= data.zgsjhf %>份</div>
+                        <a><div class="btn ck slc-fd" e="早餐" c="谷薯">选择食物</div></a>
+                    </div>
+                    <div class="row" id="z-dr">
+                        <img src="/images/tnbfood/c-dr.jpg"/>
+                        <div class="title">豆乳类</div>
+                        <div class="fn">建议摄入</div>
+                        <a><div class="btn ck slc-fd" e="早餐" c="豆乳">选择食物</div></a>
+                    </div>
+                    <div class="row" id="z-sc">
+                        <img src="/images/tnbfood/c-sc.jpg"/>
+                        <div class="title">蔬菜类</div>
+                        <div class="fn">可以摄入</div>
+                        <a><div class="btn ck slc-fd" e="早餐" c="蔬菜">选择食物</div></a>
+                    </div>
+                    <div class="row" id="z-sg">
+                        <img src="/images/tnbfood/c-sg.jpg"/>
+                        <div class="title">水果类</div>
+                        <div class="fn">可以摄入</div>
+                        <a><div class="btn ck slc-fd" e="早餐" c="水果">选择食物</div></a>
+                    </div>
+                    <div class="row" id="z-r">
+                        <img src="/images/tnbfood/c-r.jpg"/>
+                        <div class="title">肉类</div>
+                        <div class="fn">不推荐摄入</div>
+                        <a><div class="btn ck slc-fd" e="早餐" c="肉">选择食物</div></a>
+                    </div>
+                    <div class="row" id="z-yz">
+                        <img src="/images/tnbfood/c-yz.jpg"/>
+                        <div class="title">油脂类</div>
+                        <div class="fn">不推荐摄入</div>
+                        <a><div class="btn ck slc-fd" e="早餐" c="油脂">选择食物</div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="h ck">
+                <div class="w"></div>
+                <div class="title">
+                    午餐
+                </div>
+                <div class="des">
+                    占总热量 40%，约占 <%= data.wjhf %> 个交换份
+                </div>
+                <div class="ar">
+                </div>
+                <div class="w"></div>
+                </div>
+                <div class="sub" style="display: none">
+                    <div class="row" id="w-gs">
+                        <img src="/images/tnbfood/c-gs.jpg"/>
+                        <div class="title">谷薯类</div>
+                        <div class="fn red">至少摄入<%= data.wgsjhf %>份</div>
+                        <a><div class="btn ck slc-fd" e="午餐" c="谷薯">选择食物</div></a>
+                    </div>
+                    <div class="row" id="w-dr">
+                        <img src="/images/tnbfood/c-dr.jpg"/>
+                        <div class="title">豆乳类</div>
+                        <div class="fn">建议摄入</div>
+                        <a><div class="btn ck slc-fd" e="午餐" c="豆乳">选择食物</div></a>
+                    </div>
+                    <div class="row" id="w-sc">
+                        <img src="/images/tnbfood/c-sc.jpg"/>
+                        <div class="title">蔬菜类</div>
+                        <div class="fn">建议摄入</div>
+                        <a><div class="btn ck slc-fd" e="午餐" c="蔬菜">选择食物</div></a>
+                    </div>
+                    <div class="row" id="w-sg">
+                        <img src="/images/tnbfood/c-sg.jpg"/>
+                        <div class="title">水果类</div>
+                        <div class="fn">可以摄入</div>
+                        <a><div class="btn ck slc-fd" e="午餐" c="水果">选择食物</div></a>
+                    </div>
+                    <div class="row" id="w-r">
+                        <img src="/images/tnbfood/c-r.jpg"/>
+                        <div class="title">肉类</div>
+                        <div class="fn">可以摄入</div>
+                        <a><div class="btn ck slc-fd" e="午餐" c="肉">选择食物</div></a>
+                    </div>
+                    <div class="row" id="w-yz">
+                        <img src="/images/tnbfood/c-yz.jpg"/>
+                        <div class="title">油脂类</div>
+                        <div class="fn">建议摄入</div>
+                        <a><div class="btn ck slc-fd" e="午餐" c="油脂">选择食物</div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="h ck">
+                <div class="w"></div>
+                <div class="title">
+                    晚餐
+                </div>
+                <div class="des">
+                    占总热量 35%，约占 <%= data.njhf %> 个交换份
+                </div>
+                <div class="ar">
+                </div>
+                <div class="w"></div>
+                </div>
+                <div class="sub" style="display: none">
+                    <div class="row" id="n-gs">
+                        <img src="/images/tnbfood/c-gs.jpg"/>
+                        <div class="title">谷薯类</div>
+                        <div class="fn red">至少摄入<%= data.ngsjhf %>份</div>
+                        <a><div class="btn ck slc-fd" e="晚餐" c="谷薯">选择食物</div></a>
+                    </div>
+                    <div class="row" id="n-dr">
+                        <img src="/images/tnbfood/c-dr.jpg"/>
+                        <div class="title">豆乳类</div>
+                        <div class="fn">建议摄入</div>
+                        <a><div class="btn ck slc-fd" e="晚餐" c="豆乳">选择食物</div></a>
+                    </div>
+                    <div class="row" id="n-sc">
+                        <img src="/images/tnbfood/c-sc.jpg"/>
+                        <div class="title">蔬菜类</div>
+                        <div class="fn">建议摄入</div>
+                        <a><div class="btn ck slc-fd" e="晚餐" c="蔬菜">选择食物</div></a>
+                    </div>
+                    <div class="row" id="n-sg">
+                        <img src="/images/tnbfood/c-sg.jpg"/>
+                        <div class="title">水果类</div>
+                        <div class="fn">可以摄入</div>
+                        <a><div class="btn ck slc-fd" e="晚餐" c="水果">选择食物</div></a>
+                    </div>
+                    <div class="row" id="n-r">
+                        <img src="/images/tnbfood/c-r.jpg"/>
+                        <div class="title">肉类</div>
+                        <div class="fn">可以摄入</div>
+                        <a><div class="btn ck slc-fd" e="晚餐" c="肉">选择食物</div></a>
+                    </div>
+                    <div class="row" id="n-yz">
+                        <img src="/images/tnbfood/c-yz.jpg"/>
+                        <div class="title">油脂类</div>
+                        <div class="fn">建议摄入</div>
+                        <a><div class="btn ck slc-fd" e="晚餐" c="油脂">选择食物</div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bw"></div>
+
+            <div class="bt">
+                <a><div class="btn en" id="c-btn">生成健康食谱</div></a>
+            </div>
+
+            <div class="cover" style="display: none" id="cover"></div>
+            <div class="cls ck" style="display: none" id="cls-cover">取消</div>
+            <div class="fm" style="display: none" id="sfm">
+                <div class="top">
+                    <div class="w"></div>
+                    <div class="title" id="d-tt">
+                    </div>
+                    <div class="sub" id="d-zs" style="display: none">
+                    </div>
+                </div>
+                <div class="list" id="d-list">
+                </div>
+                <div class="bt">
+                    <a><div class="btn en" id="d-btn"></div></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+<script>
+document.body.addEventListener('touchmove', function (event) {
+  if ($("#sfm").is(":hidden")) return;
+  if ($(event.target).parents('.list').length > 0) return;
+  event.preventDefault();
+  event.stopPropagation();
+}, false);
+
+$('.food').on('touchend', '.ck', function(event){
+  $(this).css('opacity', 1);
+});
+$('.food').on('touchmove', '.ck', function(event){
+  $(this).css('opacity', 1);
+});
+$('.food').on('touchcancel', '.ck', function(event){
+  $(this).css('opacity', 1);
+});
+$('.food').on('touchstart', '.ck', function(event){
+  $(this).css('opacity', 0.5);
+});
+
+var foodDic = JSON.parse('<%- JSON.stringify(data.foodDic) %>');
+var gdata = {
+  '早餐': {'d': '<%= data.zjhf %>', 'gsjhf': '<%= data.zgsjhf %>', 's': {}, 'cs': {}, 'gs': 0, 'cgs': 0, 'es': 0, 'ces': 0},
+  '午餐': {'d': '<%= data.wjhf %>', 'gsjhf': '<%= data.wgsjhf %>', 's': {}, 'cs': {}, 'gs': 0, 'cgs': 0, 'es': 0, 'ces': 0},
+  '晚餐': {'d': '<%= data.njhf %>', 'gsjhf': '<%= data.ngsjhf %>', 's': {}, 'cs': {}, 'gs': 0, 'cgs': 0, 'es': 0, 'ces': 0},
+  'dc': '<%= data.dc %>',
+  'd': '<%= data.jhf %>',
+  's': 0,
+  'cs': 0,
+  'tshhw': {'d': '<%= data.tshhw %>', 's': 0, 'cs': 0},
+  'dbz': {'d': '<%= data.dbz %>', 's': 0, 'cs': 0},
+  'zf': {'d': '<%= data.zf %>', 's': 0, 'cs': 0}
+};
+
+$(document).ready(function(){
+
+  $('.h').on('tap', function(event){
+    if ($(this).parent().children('.sub').is(':hidden')) {
+      $(this).parent().children('.sub').show();
+      $(this).children('.ar').addClass('act');
+    } else {
+      $(this).parent().children('.sub').hide();
+      $(this).children('.ar').removeClass('act');
+    }
+  });
+
+  $('.slc-fd').on('tap', function(event){
+    var e = $(this).attr('e');
+    var c = $(this).attr('c');
+    var dtthtml = e + ' - ' + c + '类食物';
+    $('#d-tt').html(dtthtml);
+    if (c == '谷薯') {
+      var dzshtml = '至少选择 ' + gdata[e]['gsjhf'] + ' 份，您已选择 ' + gdata[e]['gs'] + ' 份';
+      $('#d-zs').html(dzshtml);
+      $('#d-zs').show();
+      if (gdata[e]['gs'] < gdata[e]['gsjhf']) {
+        var dbtnhtml = '请再选择 ' + (gdata[e]['gsjhf'] - gdata[e]['gs']) + ' 份食物';
+        $('#d-btn').html(dbtnhtml);
+        $('#d-btn').addClass('en');
+        $('#d-btn').removeClass('ck');
+      } else {
+        var dbtnhtml = '确定';
+        $('#d-btn').html(dbtnhtml);
+        $('#d-btn').removeClass('en');
+        $('#d-btn').addClass('ck');
+      }
+    } else {
+      $('#d-zs').hide();
+      var dbtnhtml = '确定';
+      $('#d-btn').html(dbtnhtml);
+      $('#d-btn').removeClass('en');
+      $('#d-btn').addClass('ck');
+    }
+    var cf = 'tshhw';
+    if (c == '谷薯' || c == '蔬菜' || c == '水果') {
+      cf = 'tshhw';
+    }
+    if (c == '豆乳') {
+      cf = 'dbz';
+    }
+    if (c == '油脂' || c == '肉') {
+      cf = 'zf';
+    }
+    var foodList = foodDic[c];
+    var dlisthtml = '';
+    for (var key in foodList) {
+      if (!gdata[e]['s'][foodList[key].name]) gdata[e]['s'][foodList[key].name] = 0;
+      dlisthtml += '<div class="row" e="' + e + '" c="' + c + '" name="' + foodList[key].name + '" cf="' + cf  + '">'
+                +  '<img src="' + foodList[key].img + '" />'
+                +  '<div class="name">' + foodList[key].name + '</div>'
+                +  '<div class="v">' + foodList[key].portion + foodList[key].unit + '</div>'
+                +  '<div class="btg">'
+                +  '<div class="jian ck">-</div>'
+                +  '<div class="fn">' + gdata[e]['s'][foodList[key].name] + ' 份</div>'
+                +  '<div class="jia ck">+</div>'
+                +  '</div>'
+                +  '</div>';
+      gdata[e]['cs'][foodList[key].name] = gdata[e]['s'][foodList[key].name];
+    }
+    $('#d-list').html(dlisthtml);
+    gdata[e]['cgs'] =  gdata[e]['gs'];
+    gdata[e]['ces'] = gdata[e]['es'];
+    gdata[cf]['cs'] = gdata[cf]['s'];
+    gdata['cs'] = gdata['s'];
+  });
+
+  $('#d-list').on('tap', '.jia', function(event){
+    var e = $(this).parent().parent().attr('e');
+    var c = $(this).parent().parent().attr('c');
+    var name = $(this).parent().parent().attr('name');
+    var cf = $(this).parent().parent().attr('cf');
+    if (gdata['cs'] < gdata['d']) {
+      if (gdata[cf]['cs'] < gdata[cf]['d']) {
+        if (gdata[e]['ces'] < gdata[e]['d']) {
+          if (c == '谷薯') {
+            gdata[e]['cgs'] += 0.5;
+            var dzshtml = '至少选择 ' + gdata[e]['gsjhf'] + ' 份，您已选择 ' + gdata[e]['cgs'] + ' 份';
+            $('#d-zs').html(dzshtml);
+            if (gdata[e]['cgs'] < gdata[e]['gsjhf']) {
+              var dbtnhtml = '请再选择 ' + (gdata[e]['gsjhf'] - gdata[e]['cgs']) + ' 份食物';
+              $('#d-btn').html(dbtnhtml);
+              $('#d-btn').addClass('en');
+              $('#d-btn').removeClass('ck');
+            } else {
+              var dbtnhtml = '确定';
+              $('#d-btn').html(dbtnhtml);
+              $('#d-btn').removeClass('en');
+              $('#d-btn').addClass('ck');
+            }
+          }
+          gdata['cs'] += 0.5;
+          gdata[cf]['cs'] += 0.5;
+          gdata[e]['ces'] += 0.5;
+          gdata[e]['cs'][name] += 0.5;
+          $(this).prev().html(gdata[e]['cs'][name] + ' 份');
+        } else {
+          alert(e + '没有剩余交换份');
+        }
+      } else {
+        if (cf == 'tshhw') alert('碳水化合物没有剩余交换份');
+        if (cf == 'dbz') alert('蛋白质没有剩余交换份');
+        if (cf == 'zf') alert('脂肪没有剩余交换份');
+      }
+    } else {
+      alert('没有剩余交换份');
+    }
+  });
+
+  $('#d-list').on('tap', '.jian', function(event){
+    var e = $(this).parent().parent().attr('e');
+    var c = $(this).parent().parent().attr('c');
+    var name = $(this).parent().parent().attr('name');
+    var cf = $(this).parent().parent().attr('cf');
+    if (gdata[e]['cs'][name] > 0) {
+      if (c == '谷薯') {
+        gdata[e]['cgs'] -= 0.5;
+        var dzshtml = '至少选择 ' + gdata[e]['gsjhf'] + ' 份，您已选择 ' + gdata[e]['cgs'] + ' 份';
+        $('#d-zs').html(dzshtml);
+        if (gdata[e]['cgs'] < gdata[e]['gsjhf']) {
+          var dbtnhtml = '请再选择 ' + (gdata[e]['gsjhf'] - gdata[e]['cgs']) + ' 份食物';
+          $('#d-btn').html(dbtnhtml);
+          $('#d-btn').addClass('en');
+          $('#d-btn').removeClass('ck');
+        } else {
+          var dbtnhtml = '确定';
+          $('#d-btn').html(dbtnhtml);
+          $('#d-btn').removeClass('en');
+          $('#d-btn').addClass('ck');
+        }
+      }
+      gdata['cs'] -= 0.5;
+      gdata[cf]['cs'] -= 0.5;
+      gdata[e]['ces'] -= 0.5;
+      gdata[e]['cs'][name] -= 0.5;
+      $(this).next().html(gdata[e]['cs'][name] + ' 份');
+    }
+  });
+
+  $('#d-btn').on('tap', function(event){
+    var e = $(this).parent().parent().prev().children('.row').eq(0).attr('e');
+    var c = $(this).parent().parent().prev().children('.row').eq(0).attr('c');
+    var cf = $(this).parent().parent().prev().children('.row').eq(0).attr('cf');
+    if ($(this).hasClass('ck')) {
+      var foodList = foodDic[c];
+      var slh = '';
+      for (var key in foodList) {
+        gdata[e]['s'][foodList[key].name] = gdata[e]['cs'][foodList[key].name];
+        if (gdata[e]['s'][foodList[key].name] > 0) {
+         slh +='<div class="row" e="' + e + '" c="' + c + '" name="' + foodList[key].name + '" cf="' + cf  + '">'
+             + '<div class="title">' + foodList[key].name + '</div>'
+             + '<div class="l">' + gdata[e]['s'][foodList[key].name] + '份</div>'
+             + '<div class="v">共' + (foodList[key].portion * gdata[e]['s'][foodList[key].name]) + foodList[key].unit + '</div>'
+             + '<a><div class="btn ck del">删除</div></a>'
+             + '</div>';
+        }
+      }
+      gdata[e]['gs'] =  gdata[e]['cgs'];
+      gdata[e]['es'] = gdata[e]['ces'];
+      gdata[cf]['s'] = gdata[cf]['cs'];
+      gdata['s'] = gdata['cs'];
+
+      $('#sfm').hide();
+      $('#cover').hide();
+      $('#cls-cover').hide();
+
+      $('#syjhf').html(gdata['d'] - gdata['s']);
+      $('#tshhwn').html(gdata['tshhw']['s']);
+      $('#dbzn').html(gdata['dbz']['s']);
+      $('#zfn').html(gdata['zf']['s']);
+      $('#tshhwp').css('width', (gdata['tshhw']['s'] / gdata['tshhw']['d'] * 100) + '%');
+      $('#dbzp').css('width', (gdata['dbz']['s'] / gdata['dbz']['d'] * 100) + '%');
+      $('#zfp').css('width', (gdata['zf']['s'] / gdata['zf']['d'] * 100) + '%');
+
+      var slcn = '';
+      if (e == '早餐') {
+        slcn = 'z';
+      }
+      if (e == '午餐') {
+        slcn = 'w';
+      }
+      if (e == '晚餐') {
+        slcn = 'n';
+      }
+      if (c == '谷薯') {
+        slcn += '-gs';
+      }
+      if (c == '豆乳') {
+        slcn += '-dr';
+      }
+      if (c == '蔬菜') {
+        slcn += '-sc';
+      }
+      if (c == '水果') {
+        slcn += '-sg';
+      }
+      if (c == '肉') {
+        slcn += '-r';
+      }
+      if (c == '油脂') {
+        slcn += '-yz';
+      }
+      var slhsub = slcn + '-sub';
+      if (slh != '') {
+        slh = '<div class="sub" id="' + slhsub + '">'
+            + '<div class="w"></div>'
+            + slh
+            + '<div class="w"></div>'
+            + '</div>';
+        $('#' + slhsub).remove();
+        $('#' + slcn).after(slh);
+      }
+
+      if (gdata['s'] < gdata['d']) {
+        $('#c-btn').addClass('en');
+        $('#c-btn').removeClass('ck');
+      } else {
+        $('#c-btn').removeClass('en');
+        $('#c-btn').addClass('ck');
+      }
+    }
+  });
+
+  $('.food').on('tap', '.del', function(event){
+    var e = $(this).parent().parent().attr('e');
+    var c = $(this).parent().parent().attr('c');
+    var cf = $(this).parent().parent().attr('cf');
+    var name = $(this).parent().parent().attr('name');
+    if (c == '谷薯') {
+      gdata[e]['gs'] -= gdata[e]['s'][name];
+    }
+    gdata['s'] -= gdata[e]['s'][name];
+    gdata[cf]['s'] -= gdata[e]['s'][name];
+    gdata[e]['es'] -= gdata[e]['s'][name];
+    gdata[e]['s'][name] = 0;
+
+    $('#syjhf').html(gdata['d'] - gdata['s']);
+    $('#tshhwn').html(gdata['tshhw']['s']);
+    $('#dbzn').html(gdata['dbz']['s']);
+    $('#zfn').html(gdata['zf']['s']);
+    $('#tshhwp').css('width', (gdata['tshhw']['s'] / gdata['tshhw']['d'] * 100) + '%');
+    $('#dbzp').css('width', (gdata['dbz']['s'] / gdata['dbz']['d'] * 100) + '%');
+    $('#zfp').css('width', (gdata['zf']['s'] / gdata['zf']['d'] * 100) + '%');
+    if($(this).parent().parent().parent().children().length > 3){
+      $(this).parent().parent().remove();
+    } else {
+      $(this).parent().parent().parent().remove();
+    }
+
+    $('#c-btn').addClass('en');
+    $('#c-btn').removeClass('ck');
+  });
+
+  $('#c-btn').on('tap', function(event){
+    if (!$(this).hasClass('en')) {
+      $.ajax({
+        url: '/tnbfood/make_ajax',
+        dataType: 'json',
+        type: 'POST',
+        data: gdata,
+        success: function(data) {
+          if (data.result == 'ok'){
+            location.href = '/tnbfood/detail';
+          } else {
+            alert('提交失败');
+          }
+        }.bind(this),
+        error: function(xhr, status, err) {
+          alert('提交失败');
+        }.bind(this)
+      });
+    }
+  });
+
+});
+</script>
+</body>
+</html>

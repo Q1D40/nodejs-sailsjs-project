@@ -1,0 +1,53 @@
+﻿html {
+  height: 100%;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+a:link{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+div {
+  -webkit-user-select:none;
+}
+
+img {
+  -webkit-user-select:none;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 100%;
+    height: 1rem;
+}

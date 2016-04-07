@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="tnb-sp">
+            <div class="img"></div>
+            <div class="des">帮助糖尿病患者根据个人的实际情况轻松配制出营养均衡的食谱</div>
+            <a href="<% if (data.type == 2) { %>/tnbfood/list<% } else if (data.type == 1) { %>/user/info?type=1<% } else { %>/user/edit?type=1<% } %>"><div class="btn ck">使用</div></a>
+        </div>
+        <div class="tab">
+            <a href="#"><div class="ws act"><div class="icona"></div><div class="title">健康卫士</div></div></a>
+            <a href="/user/info"><div class="my ck"><div class="icon"></div><div class="title">我的资料</div></div></a>
+        </div>
+
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/tnbfood/main.js"></script>
+</body>
+</html>

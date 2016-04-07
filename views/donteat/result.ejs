@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>不能吃</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/donteat/main.css" rel="stylesheet">
+    <script src="/js/donteat/font.js"></script>
+</head>
+
+<body>
+
+    <header>
+      <% if (data.foodData.img) { %>
+        <div class="food">
+            <img class="main" src="<%= data.foodData.img %>"/>
+            <img class="shadow" src="/images/donteat/food_shadow.png"/>
+            <div class="title"><%= data.food %></div>
+        </div>
+        <% } else { %>
+        <div class="noimg">
+            <img class="main" src="/images/donteat/n<%= data.randomImg %>.jpg"/>
+            <div class="title"><%= data.food %></div>
+        </div>
+        <% } %>
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="tab">
+                <div class="left act" id="eat" >能不能吃</div>
+                <div id="cnt">营养成分</div>
+            </div>
+        </section>
+        <section id="persion">
+            <div class="list one">
+                <div class="cell">
+                    <div class="title">胆固醇偏高人群</div>
+                    <div class="result <% if (data.foodData.cHP == '能吃') { %>green<% } %><% if (data.foodData.cHP == '不能吃') { %>orange<% } %>"><%= data.foodData.cHP %></div>
+                </div>
+                <div class="cell">
+                    <div class="title">高血脂人群</div>
+                    <div class="result <% if (data.foodData.hHP == '能吃') { %>green<% } %><% if (data.foodData.hHP == '不能吃') { %>orange<% } %>"><%= data.foodData.hHP %></div>
+                </div>
+            </div>
+        </section>
+        <section id="content" style="display:none;">
+            <div class="list one">
+                <div class="cell">
+                  <div class="title">胆固醇含量（每百克含）</div>
+                    <div class="result"><%= data.foodData.cCT %> 毫克</div>
+                </div>
+                <div class="cell">
+                    <div class="title">脂肪含量（每百克含）</div>
+                    <div class="result"><%= data.foodData.fCT %> 克</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        由健康加油站奉献
+    </footer>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/donteat/result.js"></script>
+<div style="display:none;">
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256814237'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256814237' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>

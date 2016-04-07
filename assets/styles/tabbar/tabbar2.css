@@ -1,0 +1,53 @@
+﻿.tabbar {
+    background-color: #ffffff;
+    width: 100%;
+    height: 0.545rem;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #cccccc;
+}
+
+.tabbtn {
+    height: 0.545rem;
+    width: 0.65rem;
+    float: left;
+}
+
+.tabbtn:nth-child(1) {
+    margin-left: 0.2rem;
+}
+
+.tabbtn:nth-child(2) {
+    margin-left: 0.25rem;
+}
+
+.tabtitle {
+    font-size: 0.18rem;
+    line-height: 0.545rem;
+    color: #808080;
+    float: left;
+    margin-left: 0.05rem;
+}
+
+.act .tabtitle {
+    color: #1cb67b;
+}
+.tabico {
+    height: 0.22rem;
+    width: 0.22rem;
+    float: left;
+    margin-top: 0.16rem;
+    background-size:100% 100%;
+}
+
+.icobak {
+     background-image: url("/images/tabbar/t2-back.png");
+}
+
+.icofav {
+     background-image: url("/images/tabbar/t2-fav.png");
+}
+
+.act .icofav {
+     background-image: url("/images/tabbar/t2-fav-act.png");
+}

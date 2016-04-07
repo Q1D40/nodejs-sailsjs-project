@@ -1,0 +1,1280 @@
+﻿html {
+  height: 100%;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+a:link{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+div {
+  -webkit-user-select:none;
+}
+
+img {
+  -webkit-user-select:none;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.tnb-sp{
+    height: 3.03rem;
+    width: -webkit-calc(100% - 0.2rem);
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.tnb-sp > .img{
+    height: 1.47rem;
+    width: 100%;
+    background-image: url("/images/tnbfood/tnb-sp.jpg");
+    background-size:100% 100%;
+}
+
+.tnb-sp > .des{
+    font-size: 0.2rem;
+    line-height: 0.28rem;
+    text-align: center;
+    margin-top: 0.21rem;
+    color: #000000;
+    width: -webkit-calc(100% - 0.2rem);
+    margin-left: 0.1rem;
+}
+
+.tnb-sp > a > .btn{
+    height: 0.5rem;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    text-align: center;
+    margin-top: 0.21rem;
+    color: #ffffff;
+    background-color: #1cb67b;
+    width: -webkit-calc(100% - 0.2rem);
+    margin-left: 0.1rem;
+    border-radius: 0.05rem;
+}
+
+.tab{
+    background-color: #ffffff;
+    height: 0.7rem;
+    border-top: 1px solid #cccccc;
+    position: fixed;
+    bottom: 0;
+}
+
+.tab > a > .ws{
+    width: 1.87rem;
+    height: 0.7rem;
+    border-right: 1px solid #f2f2f2;
+    float: left;
+}
+
+.tab > a > .ws > .icon{
+    background-image: url("/images/tnbfood/ws-icon.png");
+    background-size:100% 100%;
+    width: 0.275rem;
+    height: 0.23rem;
+    float: left;
+    margin-top: 0.23rem;
+    margin-left: 0.35rem;
+}
+
+.tab > a > .ws > .icona{
+    background-image: url("/images/tnbfood/ws-icon-act.png");
+    background-size:100% 100%;
+    width: 0.275rem;
+    height: 0.23rem;
+    float: left;
+    margin-top: 0.23rem;
+    margin-left: 0.35rem;
+}
+
+.tab > a > .ws > .title{
+    font-size: 0.2rem;
+    line-height: 0.7rem;
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.tab > a > .my{
+    width: -webkit-calc(1.87rem - 1px);
+    height: 0.7rem;
+    float: left;
+}
+
+.tab > a > .my> .icon{
+    background-image: url("/images/tnbfood/my-icon.png");
+    background-size:100% 100%;
+    width: 0.22rem;
+    height: 0.23rem;
+    float: left;
+    margin-top: 0.23rem;
+    margin-left: 0.35rem;
+}
+
+.tab > a > .my> .icona{
+    background-image: url("/images/tnbfood/my-icon-act.png");
+    background-size:100% 100%;
+    width: 0.22rem;
+    height: 0.23rem;
+    float: left;
+    margin-top: 0.23rem;
+    margin-left: 0.35rem;
+}
+
+.tab > a > .my > .title{
+    font-size: 0.2rem;
+    line-height: 0.7rem;
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.tab > a > .act{
+    color: #1cb67b;
+}
+
+.my-info > .top{
+    background-image: url("/images/tnbfood/my-top.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.99rem;
+}
+
+.my-info{
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.my-info > .avatar{
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #ffffff;
+    border-radius:50%;
+    position: absolute;
+    top: 0.3rem;
+    left: -webkit-calc((100% - 1rem) / 2);
+}
+
+.my-info > .nickname{
+    color: #ffffff;
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    height: 0.25rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 1.45rem;
+}
+
+.my-info > .info{
+    background-color: #ffffff;
+}
+
+.my-info > .info > .row{
+    height: 0.5rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.my-info > .info > .row > .title{
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #808080;
+    float: left;
+    margin-top: 0.16rem;
+}
+
+.my-info > .info > .row > .value{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    color: #808080;
+    float: right;
+    margin-top: 0.15rem;
+}
+
+.info-tip > .title{
+    font-size: 0.35rem;
+    line-height: 0.35rem;
+    color: #000000;
+    text-align: center;
+    height: 0.35rem;
+    margin-top: 0.8rem;
+}
+
+.info-tip > .sub{
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    color: #000000;
+    text-align: center;
+    height: 0.25rem;
+    margin-top: 0.11rem;
+}
+
+.info-tip > .tip{
+    background-image: url("/images/tnbfood/info-tip.png");
+    background-size:100% 100%;
+    width: 3.145rem;
+    height: 0.975rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+    font-size: 0.2rem;
+    line-height: 0.25rem;
+    color: #3e3e3e;
+    padding-top: 0.61rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    text-align: center;
+}
+
+.info-tip > a > .btn{
+    height: 0.5rem;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    background-color: #1cb67b;
+    width: -webkit-calc(100% - 0.4rem);
+    margin-left: 0.2rem;
+    border-radius: 0.05rem;
+}
+
+.slc-sex > .top{
+    background-image: url("/images/tnbfood/slc-sex-top.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.47rem;
+}
+
+.slc-sex > a > div{
+    box-shadow: 0 1px 1px #e4e4e4;
+    background-color: #ffffff;
+    height: 1rem;
+    margin-top: 0.1rem;
+    width: -webkit-calc(100% - 0.2rem);
+    margin-left: 0.1rem;
+}
+
+.slc-sex > a > div > .icon{
+    background-size:100% 100%;
+    width: 0.345rem;
+    height: 0.35rem;
+    float: left;
+    margin-left: 1.33rem;
+    margin-top: 0.33rem;
+}
+
+.slc-sex > a > .man > .icon{
+    background-image: url("/images/tnbfood/man.png");
+}
+
+.slc-sex > a > .woman > .icon{
+    background-image: url("/images/tnbfood/woman.png");
+}
+
+.slc-sex > a > div > .title{
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+    float: left;
+    margin-left: 0.23rem;
+    margin-top: 0.33rem;
+}
+
+.slc-sex > a > .man > .title{
+    color: #2997d2;
+}
+
+.slc-sex > a > .woman > .title{
+    color: #ff6161;
+}
+
+.slc-height > .top{
+    background-image: url("/images/tnbfood/slc-height-man.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.47rem;
+    position: fixed;
+    top: 0;
+}
+
+.slc-height > .woman{
+    background-image: url("/images/tnbfood/slc-height-woman.jpg");
+}
+
+.slc-height > .bodyh{
+    margin-top: 1.55rem;
+}
+
+.slc-height > .bodyh > div{
+    background-color: #ffffff;
+    border:1px solid #efefef;
+    font-size: 0.2rem;
+    color: #3e3e3e;
+    border-radius: 0.05rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: -webkit-calc(0.63rem - 1px);
+    text-align: center;
+    float: left;
+    margin-left: 0.1rem;
+    margin-top: 0.14rem;
+}
+
+.slc-w > .top{
+    background-image: url("/images/tnbfood/slc-w-man.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.47rem;
+    position: fixed;
+    top: 0;
+}
+
+.slc-w > .woman{
+    background-image: url("/images/tnbfood/slc-w-woman.jpg");
+}
+
+.slc-w > .bodyw{
+    margin-top: 1.55rem;
+}
+
+.slc-w > .bodyw > div{
+    background-color: #ffffff;
+    border:1px solid #efefef;
+    font-size: 0.2rem;
+    color: #3e3e3e;
+    border-radius: 0.05rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: -webkit-calc(0.63rem - 1px);
+    text-align: center;
+    float: left;
+    margin-left: 0.1rem;
+    margin-top: 0.14rem;
+}
+
+.slc-age > .top{
+    background-image: url("/images/tnbfood/slc-age-man.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.47rem;
+    position: fixed;
+    top: 0;
+}
+
+.slc-age > .woman{
+    background-image: url("/images/tnbfood/slc-age-woman.jpg");
+}
+
+.slc-age > .bodyh{
+    margin-top: 1.55rem;
+}
+
+.slc-age > .bodyh > div{
+    background-color: #ffffff;
+    border:1px solid #efefef;
+    font-size: 0.2rem;
+    color: #3e3e3e;
+    border-radius: 0.05rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: -webkit-calc(0.63rem - 1px);
+    text-align: center;
+    float: left;
+    margin-left: 0.1rem;
+    margin-top: 0.14rem;
+}
+
+.slc-work > .top{
+    background-image: url("/images/tnbfood/slc-work-m.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.47rem;
+}
+
+.slc-work > .woman{
+    background-image: url("/images/tnbfood/slc-work-w.jpg");
+}
+
+.slc-work > a > div{
+    box-shadow: 0 1px 1px #e4e4e4;
+    background-color: #ffffff;
+    height: 1rem;
+    margin-top: 0.1rem;
+    width: -webkit-calc(100% - 0.2rem);
+    margin-left: 0.1rem;
+}
+
+.slc-work > a > div > img{
+    width: 0.52rem;
+    height: 0.46rem;
+    float: left;
+    margin-left: 0.35rem;
+    margin-top: 0.27rem;
+}
+
+.slc-work > a > div > .title{
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    color: #000000;
+    float: left;
+    margin-left: 0.37rem;
+    margin-top: 0.26rem;
+}
+
+.slc-work > a > div > .sub{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    color: #3e3e3e;
+    float: left;
+    margin-left: 0.37rem;
+    margin-top: 0.1rem;
+}
+
+.pro > .top{
+    background-image: url("/images/tnbfood/pro-top.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.47rem;
+}
+
+.pro{
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.pro > .avatar{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid #ffffff;
+    border-radius:50%;
+    position: absolute;
+    top: 0.32rem;
+    left: -webkit-calc((100% - 0.5rem) / 2);
+}
+
+.pro > .nickname{
+    color: #ffffff;
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    height: 0.25rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0.92rem;
+}
+
+.pro > .info{
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+    height: 3.6rem;
+}
+
+.pro > .info .left{
+    width: 1.39rem;
+    float: left;
+}
+
+.pro > .info .left .per{
+    background-image: url("/images/tnbfood/pro-m.jpg");
+    background-size:100% 100%;
+    width: 0.795rem;
+    height: 1.88rem;
+    margin-left: 0.3rem;
+    margin-top: 0.25rem;
+}
+
+.pro > .info .left .woman{
+    background-image: url("/images/tnbfood/pro-w.jpg");
+    width: 0.96rem;
+    height: 1.785rem;
+    margin-left: 0.2rem;
+}
+
+.pro > .info .right{
+    width: 2.36rem;
+    float: left;
+}
+
+.pro > .info .right .row{
+    width: 2.21rem;
+    height: 0.5rem;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 0.2rem;
+    color: #3e3e3e;
+    line-height: 0.5rem;
+}
+
+.pro > .info .right .row:last-child{
+    border: 0;
+}
+
+.pro > .info .right .row .title{
+    width: 1rem;
+    float: left;
+    text-align: right;
+}
+
+.pro > .info .right .row .v{
+    width: 0.98rem;
+    float: left;
+    text-align: left;
+    margin-left: 0.23rem;
+}
+
+.rbtn{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    width: -webkit-calc(100% - 0.2rem);
+    border: 1px solid #cccccc;
+    margin-left: 0.1rem;
+    font-size: 0.18rem;
+    text-align: center;
+    color: #2997d2;
+    margin-top: 0.1rem;
+}
+
+.bth{
+    height: 0.8rem;
+}
+
+.bt{
+    background-color: #ffffff;
+    height: 0.7rem;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    position: fixed;
+    bottom: 0;
+}
+
+.bt > a > .btn{
+    height: 0.5rem;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    text-align: center;
+    margin-top: 0.1rem;
+    color: #ffffff;
+    background-color: #1cb67b;
+    width: -webkit-calc(100% - 0.2rem);
+    margin-left: 0.1rem;
+    border-radius: 0.05rem;
+}
+
+.bt > a > .en{
+    background-color: #aaaaaa;
+}
+
+.food > .top{
+    background-image: url("/images/tnbfood/food-top.jpg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 1.47rem;
+    color: #ffffff;
+}
+
+.food > .top > .left{
+    width: 1.6rem;
+    float: left;
+}
+
+.food > .top > .right{
+    width: -webkit-calc(100% - 1.6rem);
+    float: left;
+}
+
+.food > .top > .left > .up{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.food > .top > .left > .dn{
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    float: left;
+    margin-top: 0.2rem;
+    margin-left: 0.3rem;
+    max-width: 1rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .top > .left > .fn{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    float: left;
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
+}
+
+.food > .top > .right{
+    margin-top: 0.07rem;
+}
+
+.food > .top > .right > .row{
+    font-size: 0.15rem;
+    line-height: 0.15rem;
+    float: left;
+    height: 0.25rem;
+    margin-top: 0.15rem;
+    margin-left: 0.15rem;
+    width: 1.77rem;
+}
+
+.food > .top > .right > .row > .title{
+    float: left;
+    text-align: left;
+}
+
+.food > .top > .right > .row > .v{
+    float: right;
+    text-align: right;
+}
+
+.food > .top > .right > .row > .p{
+    border: 1px solid #ffffff;
+    height: 0.04rem;
+    margin-top: 0.2rem;
+}
+
+.food > .top > .right > .row > .p > .vl{
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.food > .row{
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px #e4e4e4;
+    margin-bottom: 0.1rem;
+}
+
+.food > .row > .h > .w{
+    height: 0.2rem;
+}
+
+.food > .row >  .h > .title{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    color: #000000;
+    height: 0.2rem;
+    margin-left: 0.15rem;
+}
+
+.food > .row > .h > .des{
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #3e3e3e;
+    height: 0.18rem;
+    margin-top: 0.1rem;
+    margin-left: 0.15rem;
+}
+
+.food > .row > .h > .ar{
+    background-image: url("/images/tnbfood/a1.png");
+    background-size:100% 100%;
+    width: 0.17rem;
+    height: 0.12rem;
+    float: right;
+    position: relative;
+    right: 0.15rem;
+    bottom: 0.25rem;
+}
+
+.food > .row > .h > .act{
+    background-image: url("/images/tnbfood/a2.png");
+}
+
+.food > .row > .sub{
+    background-color: #f6f6f6;
+    border-top: 1px solid #e4e4e4;
+}
+
+.food > .row > .sub > .row{
+    height: 0.8rem;
+    border-bottom: 1px solid #e4e4e4;
+    width: -webkit-calc(100% - 0.2rem);
+    margin-left: 0.2rem;
+}
+
+.food > .row > .sub > .row:last-child {
+    border-bottom: 0;
+}
+
+.food > .row > .sub > .row > img{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-top: 0.15rem;
+}
+
+.food > .row > .sub > .row > .title{
+    font-size: 0.2rem;
+    color: #3e3e3e;
+    float: left;
+    line-height: 0.8rem;
+    margin-left: 0.1rem;
+    width: 0.8rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .row > .sub > .row > .fn{
+    font-size: 0.18rem;
+    color: #808080;
+    float: left;
+    line-height: 0.8rem;
+    margin-left: 0.05rem;
+    width: 1rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.food > .row > .sub > .row > a > .btn{
+    font-size: 0.15rem;
+    color: #ffffff;
+    float: right;
+    width: 0.8rem;
+    height: 0.35rem;
+    background-color: #1cb67b;
+    text-align: center;
+    line-height: 0.35rem;
+    border-radius: 0.05rem;
+    margin-top: 0.225rem;
+    margin-right: 0.15rem;
+}
+
+.food > .row > .sub > .row > .red{
+    color: #ff6161;
+}
+
+.food > .bw{
+    height: 0.7rem;
+}
+
+.food > .row > .sub > .sub{
+    border-bottom: 1px solid #e4e4e4;
+    width: -webkit-calc(100% - 0.4rem);
+    margin-left: 0.2rem;
+}
+
+.food > .row > .sub > .sub > .w{
+    height: 0.15rem;
+}
+
+.food > .row > .sub > .sub > .row{
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+    color: #3e3e3e;
+    height: 0.4rem;
+}
+
+.food > .row > .sub > .sub > .row > .title{
+    float: left;
+    margin-left: 0.2rem;
+    width: 1.13rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .row > .sub > .sub > .row > .l{
+    float: left;
+    width: 0.64rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .row > .sub > .sub > .row > .v{
+    float: left;
+    width: 0.9rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .row > .sub > .sub > .row > a > .btn{
+    color: #ff6161;
+    float: right;
+}
+
+.food > .cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity:0.8;
+}
+
+.food > .cls{
+    background-color: #ff6161;
+    position: fixed;
+    top: 0.32rem;
+    right: 0.2rem;
+    width: 0.6rem;
+    height: 0.28rem;
+    border-radius: 0.05rem 0.05rem 0 0;
+    font-size: 0.18rem;
+    line-height: 0.28rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.food > .fm{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0.6rem;
+    left: 0.1rem;
+    width: 3.55rem;
+    height: 5rem;
+    border-radius: 0.05rem;
+}
+
+.food > .fm > .top{
+    height: 1.07rem;
+    border-bottom: 1px solid #cccccc;
+}
+
+.food > .fm > .top > .w{
+    height: 0.28rem;
+}
+
+.food > .fm > .top > .title{
+    font-size: 0.23rem;
+    line-height: 0.23rem;
+    color: #000000;
+    text-align: center;
+}
+
+.food > .fm > .top > .sub{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+
+.food > .fm > .list{
+    height: 3.23rem;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.food > .fm > .list > .row{
+    height: 0.8rem;
+    border-bottom: 1px solid #cccccc;
+}
+
+.food > .fm > .list > .row > img{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-top: 0.15rem;
+    margin-left: 0.1rem;
+}
+
+.food > .fm > .list > .row > .name{
+    width: 0.79rem;
+    font-size: 0.2rem;
+    line-height: 0.8rem;
+    float: left;
+    margin-left: 0.1rem;
+    color: #000000;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .fm > .list > .row > .v{
+    width: 0.56rem;
+    font-size: 0.18rem;
+    line-height: 0.8rem;
+    float: left;
+    margin-left: 0.1rem;
+    color: #3e3e3e;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .fm > .list > .row > .btg{
+    width: 1.3rem;
+    height: -webkit-calc(0.41rem + 2px);
+    font-size: 0.15rem;
+    float: left;
+    margin-top: 0.195rem;
+    color: #3e3e3e;
+}
+
+.food > .fm > .list > .row > .btg > .jia{
+    border: 1px solid #808080;
+    height: 0.41rem;
+    line-height: 0.41rem;
+    text-align: center;
+    width: 0.38rem;
+    float: left;
+    font-size: 0.22rem;
+}
+
+.food > .fm > .list > .row > .btg > .fn{
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    height: 0.41rem;
+    line-height: 0.41rem;
+    text-align: center;
+    width: 0.5rem;
+    float: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.food > .fm > .list > .row > .btg > .green{
+    color: #1cb67b;
+}
+
+.food > .fm > .list > .row > .btg > .jian{
+    border: 1px solid #808080;
+    height: 0.41rem;
+    line-height: 0.41rem;
+    text-align: center;
+    width: 0.38rem;
+    float: left;
+    font-size: 0.22rem;
+}
+
+.food > .fm > .bt{
+    background-color: #ffffff;
+    height: 0.7rem;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    position: relative;
+    border-radius: 0 0 0.05rem 0.05rem;
+}
+
+.food > .fm > .bt > a > .btn{
+    height: 0.5rem;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    text-align: center;
+    margin-top: 0.1rem;
+    color: #ffffff;
+    background-color: #1cb67b;
+    width: -webkit-calc(100% - 0.2rem);
+    margin-left: 0.1rem;
+    border-radius: 0.05rem;
+}
+
+.food > .fm > .bt > a > .en{
+    background-color: #aaaaaa;
+}
+
+.fooded > .top{
+    background-image: url("/images/tnbfood/fd-top.jpg");
+    background-size:100% 100%;
+    height: 1.47rem;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0.1rem;
+}
+
+.fooded > .top > .w{
+    height: 0.285rem;
+}
+
+.fooded > .top > .title{
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    text-align: center;
+}
+
+.fooded > .top > .sec{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+
+.fooded > .top > .thr{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+
+.fooded > .fd{
+    box-shadow: 0 1px 1px #e4e4e4;
+    background-color: #ffffff;
+    margin-bottom: 0.1rem;
+    width: 3.55rem;
+    margin-left: 0.1rem;
+}
+
+.fooded > .fd > .head{
+    height: 0.86rem;
+    border-bottom: 1px solid #e4e4ed;
+}
+
+.fooded > .fd > .head > .w{
+    height: 0.2rem;
+}
+
+.fooded > .fd > .head > .title{
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    color: #000000;
+    margin-left: 0.15rem;
+}
+
+.fooded > .fd > .head > .st{
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #3e3e3e;
+    margin-left: 0.15rem;
+    margin-top: 0.1rem;
+}
+
+.fooded > .fd > .row{
+    height: 0.8rem;
+    width: 3.4rem;
+    margin-left: 0.15rem;
+    border-bottom: 1px solid #e4e4ed;
+}
+
+.fooded > .fd > .row:last-child{
+    border-bottom: 0;
+}
+
+.fooded > .fd > .row > img{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-top: 0.15rem;
+}
+
+.fooded > .fd > .row > .name{
+    font-size: 0.2rem;
+    line-height: 0.8rem;
+    color: #3e3e3e;
+    width: 1.05rem;
+    float: left;
+    margin-left: 0.1rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.fooded > .fd > .row > .fn{
+    font-size: 0.2rem;
+    line-height: 0.8rem;
+    color: #3e3e3e;
+    width: 0.75rem;
+    float: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.fooded > .fd > .row > .v{
+    font-size: 0.2rem;
+    line-height: 0.8rem;
+    color: #3e3e3e;
+    width: 0.8rem;
+    float: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.fooded > .info{
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+    height: 3rem;
+    width: 3.55rem;
+    margin-left: 0.1rem;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.fooded > .info > .head{
+    height: 0.8rem;
+    border-bottom: 1px solid #f2f2f2;
+    color: #000000;
+    font-size: 0.2rem;
+    line-height: 0.8rem;
+    padding-left: 0.15rem;
+}
+
+.fooded > .info .left{
+    width: 1.39rem;
+    float: left;
+}
+
+.fooded > .info .left .per{
+    background-image: url("/images/tnbfood/pro-m.jpg");
+    background-size:100% 100%;
+    width: 0.795rem;
+    height: 1.88rem;
+    margin-left: 0.3rem;
+    margin-top: 0.25rem;
+}
+
+.fooded > .info .left .woman{
+    background-image: url("/images/tnbfood/pro-w.jpg");
+    width: 0.96rem;
+    height: 1.785rem;
+    margin-left: 0.2rem;
+}
+
+.fooded > .info .right{
+    width: 2.13rem;
+    float: left;
+}
+
+.fooded > .info .right .row{
+    width: 2.21rem;
+    height: 0.3rem;
+    font-size: 0.2rem;
+    color: #3e3e3e;
+    line-height: 0.3rem;
+}
+
+.fooded > .info .right .row:last-child{
+    border: 0;
+}
+
+.fooded > .info .right .row .title{
+    width: 1rem;
+    float: left;
+    text-align: right;
+}
+
+.fooded > .info .right .row .v{
+    width: 0.98rem;
+    float: left;
+    text-align: left;
+    margin-left: 0.23rem;
+}
+
+.fooded > .time{
+    font-size: 0.15rem;
+    line-height: 0.15rem;
+    text-align: center;
+    color: #3e3e3e;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.foodlist > .top{
+    background-image: url("/images/tnbfood/fl-top.jpg");
+    background-size:100% 100%;
+    height: 1.47rem;
+    width: 100%;
+}
+
+.foodlist > .food{
+    width: 3.25rem;
+    height: 2.15rem;
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    box-shadow: 0 1px 1px #e4e4e4;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+.foodlist > .food > .head{
+    height: 0.5rem;
+    width: 100%;
+}
+
+.foodlist > .food > .head > .time{
+    font-size: 0.3rem;
+    color: #000000;
+    line-height: 0.5rem;
+    text-align: center;
+    float: left;
+}
+
+.foodlist > .food > .head > .title{
+    font-size: 0.2rem;
+    color: #000000;
+    line-height: 0.5rem;
+    float: left;
+    margin-top: 0.05rem;
+}
+
+.foodlist > .food > .head > .d > a{
+    font-size: 0.18rem;
+    color: #2997d2;
+    line-height: 0.5rem;
+    float: right;
+    margin-top: 0.06rem;
+}
+
+.foodlist > .food > .ro{
+    height: 0.8rem;
+    width: 100%;
+    float: left;
+}
+
+.foodlist > .food > .ro > .logo{
+    background-image: url("/images/tnbfood/fl-z.jpg");
+    background-size:100% 100%;
+    height: 0.6rem;
+    width: 0.6rem;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.foodlist > .food > .ro > .w{
+    background-image: url("/images/tnbfood/fl-w.jpg");
+}
+
+.foodlist > .food > .ro > .rt{
+    height: 0.6rem;
+    width: 2.16rem;
+    float: left;
+    margin-left: 0.15rem;
+    margin-top: 0.1rem;
+}
+
+.foodlist > .food > .ro > .rt > .title{
+    font-size: 0.2rem;
+    color: #000000;
+    line-height: 0.3rem;
+}
+
+.foodlist > .food > .ro > .rt > .des{
+    font-size: 0.18rem;
+    color: #3e3e3e;
+    line-height: 0.3rem;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow: hidden;
+}

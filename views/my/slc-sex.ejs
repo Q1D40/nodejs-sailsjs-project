@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康卫士</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/tnbfood/main.css" rel="stylesheet">
+    <script src="/js/tnbfood/font.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="slc-sex">
+            <a><div class="man ck sbm-sex" v="男"><div class="icon"></div><div class="title">男</div></div></a>
+            <a><div class="woman ck sbm-sex" v="女"><div class="icon"></div><div class="title">女</div></div></a>
+        </div>
+
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/mobile/Tocca.min.js"></script>
+<script src="/js/base/base.js"></script>
+<script>
+  $('.sbm-sex').on('tap', function(event){
+    var v = $(this).attr('v');
+    location.href = '/my/edit?k=sex&v=' + v;
+  });
+</script>
+</body>
+</html>

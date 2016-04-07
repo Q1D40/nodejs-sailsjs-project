@@ -1,0 +1,129 @@
+﻿.top {
+    width: 100%;
+    height: 0.67rem;
+    background-color: #ffffff;
+    color: #3e3e3e;
+    padding-top: 0.2rem;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.top .title {
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 0.17rem;
+    line-height: 0.17rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.095rem;
+}
+
+.recommend {
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.2rem;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.recommend > .title {
+    color: #3e3e3e;
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    margin-left: 0.15rem;
+}
+
+.recommend .row {
+    width: -webkit-calc(100% - 0.3rem);
+    height: 0.6rem;
+    margin-top: 0.2rem;
+    margin-left: 0.15rem;
+}
+
+.recommend .row img{
+    width: 0.6rem;
+    height: 0.6rem;
+    float: left;
+}
+
+.recommend .row .main{
+    width: 2.75rem;
+    height: 0.6rem;
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.recommend .row .main .title{
+    font-size: 0.18rem;
+    color: #3e3e3e;
+    line-height: 0.3rem;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.recommend .row .main .author{
+    font-size: 0.17rem;
+    color: #808080;
+    line-height: 0.3rem;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+
+.list {
+    margin-top: 0.1rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px #e4e4e4;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.list .row {
+    width: 100%;
+    height: 0.6rem;
+}
+
+.list .row .title {
+    height: 0.6rem;
+    width: 3.2rem;
+    font-size: 0.18rem;
+    line-height: 0.6rem;
+    margin-left: 0.15rem;
+    float: left;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.list .row .ar {
+    background-image: url("/images/list/ar.png");
+    background-size:100% 100%;
+    width: 0.1rem;
+    height: 0.16rem;
+    float: right;
+    margin-top: 0.22rem;
+    margin-right: 0.15rem;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 2.06rem;
+  margin-top: 0.1rem;
+}

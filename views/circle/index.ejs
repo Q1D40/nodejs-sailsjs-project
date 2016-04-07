@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>医生圈</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/styles/circle/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="bg" src="/images/circle/top.jpg">
+        <p id="user-name" class="data-name">健康加油站</p>
+        <img id="avt" class="data-avt" src="/images/circle/avatar.png">
+    </header>
+    <div id="main">
+        <div id="list">
+        <ul id="row">
+        <% if (data.topicList) { %>
+        <% if (data.topicList.length > 0) { %>
+        <% data.topicList.forEach(function(topic) { %>
+            <li>
+                <div class="po-avt-wrap">
+                    <img class="po-avt" src="<% if (topic.doctorInfo) { %><% if (topic.doctorInfo.avatar) { %><%= topic.doctorInfo.avatar %><% } %><% } %>" />
+                </div>
+                <div class="po-cmt">
+                    <div class="po-hd">
+                      <p class="po-name"><% if (topic.doctorInfo) { %><% if (topic.doctorInfo.name) { %><%= topic.doctorInfo.name %><% } %><% } %></p>
+                        <div class="post">
+                            <p>
+                            <% if (topic.doctorInfo) { %><% if (topic.doctorInfo.description) { %><%= topic.doctorInfo.description %><% } %><% } %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cmt-wrap">
+                      <a href="<% if (topic.url) { %><%= topic.url %><% } %>" target="_blank">
+                        <div class="cmt-list">
+                          <img src="<% if (topic.thumb) { %><%= topic.thumb %><% } %>" />
+                           <span>
+                             <% if (topic.description) { %><%= topic.description %><% } %>
+                           </span>
+                        </div>
+                    </a>
+                    </div>
+                    <span class="time" style="">
+                      <% if (topic.pubTime) { %><%= topic.pubTime %><% } %>
+                    </span>
+                </div>
+            </li>
+        <% }); %>
+        <% } %>
+        <% } %>
+        </ul>
+    </div>
+    <div id="load">
+      <div id="loading" class="loading"><img src="/images/circle/loading.gif" /><span>正在加载...</span></div>
+      <div id="loadall" class="loadall"><span>已加载全部数据</span></div>
+    </div>
+    </div>
+
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/circle/index.js"></script>
+<div style="display:none;">
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256769409'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256769409' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>
